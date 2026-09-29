@@ -1,0 +1,413 @@
+{
+ "n_rows": 3362,
+ "n_causal": 217,
+ "n_docs": 159,
+ "n_rows_per_fold": {
+  "0": 557,
+  "1": 522,
+  "2": 897,
+  "3": 898,
+  "4": 488
+ },
+ "arms": {
+  "Z": {
+   "auprc": 0.19822063972889933,
+   "ci95": [
+    0.13676104037934797,
+    0.2896712077054213
+   ],
+   "source": "docs/results/cred/ens_bc8all/pred_cred.jsonl",
+   "kind": "p(Pos)+p(Neg)",
+   "n_files": 1,
+   "reachable_missing": 0,
+   "files_per_key=1": 2526,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "docs/results/cred/ens_bc8all/pred_cred.jsonl": "3da8effdfcfb28a72ebc6e22b6a15522be900f2ff99cf3f3721f32825895ac83"
+   }
+  },
+  "C": {
+   "auprc": 0.18049160680544582,
+   "ci95": [
+    0.1267575270064108,
+    0.24375501702733451
+   ],
+   "source": "same_sent",
+   "dropped": false
+  },
+  "S": {
+   "auprc": 0.21608452918651702,
+   "ci95": [
+    0.15582985451602915,
+    0.30587285397520464
+   ],
+   "source": "docs/results/paper2/e3/oof_S.jsonl",
+   "kind": "score",
+   "n_files": 1,
+   "reachable_missing": 0,
+   "files_per_key=1": 2523,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "docs/results/paper2/e3/oof_S.jsonl": "a468a7b204cc1bfbea16a59ee88b584f7cd6348ca7cb23a1ec4c3a5aca56d907"
+   }
+  },
+  "PL": {
+   "auprc": 0.4885984835394242,
+   "ci95": [
+    0.372417905358584,
+    0.6175257431945597
+   ],
+   "source": "docs/results/paper2/e3/oof_PL.jsonl",
+   "kind": "score",
+   "n_files": 1,
+   "reachable_missing": 0,
+   "files_per_key=1": 2523,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "docs/results/paper2/e3/oof_PL.jsonl": "0b6e1a7c6160fee13dd3c502363866f0aade815b73c67daa659a8cd230201112"
+   }
+  },
+  "P0": {
+   "auprc": 0.22938227791927276,
+   "ci95": [
+    0.1629703570369273,
+    0.335387303547257
+   ],
+   "source": "docs/results/paper2/e3/oof_P0.jsonl",
+   "kind": "score",
+   "n_files": 1,
+   "reachable_missing": 0,
+   "files_per_key=1": 2523,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "docs/results/paper2/e3/oof_P0.jsonl": "f0c925d68f5a9c82e540e3a937922eb77a4024001189f25c98827f86c8b3762c"
+   }
+  },
+  "FL": {
+   "auprc": 0.49137903711405206,
+   "ci95": [
+    0.37903281908609615,
+    0.6202804204974133
+   ],
+   "source": "runs/p2e3_f1_k0_s42/pred_cv.jsonl,runs/p2e3_f1_k0_s43/pred_cv.jsonl,runs/p2e3_f1_k0_s44/pred_cv.jsonl,runs/p2e3_f1_k1_s42/pred_cv.jsonl,runs/p2e3_f1_k1_s43/pred_cv.jsonl,runs/p2e3_f1_k1_s44/pred_cv.jsonl,runs/p2e3_f1_k2_s42/pred_cv.jsonl,runs/p2e3_f1_k2_s43/pred_cv.jsonl,runs/p2e3_f1_k2_s44/pred_cv.jsonl,runs/p2e3_f1_k3_s42/pred_cv.jsonl,runs/p2e3_f1_k3_s43/pred_cv.jsonl,runs/p2e3_f1_k3_s44/pred_cv.jsonl,runs/p2e3_f1_k4_s42/pred_cv.jsonl,runs/p2e3_f1_k4_s43/pred_cv.jsonl,runs/p2e3_f1_k4_s44/pred_cv.jsonl",
+   "kind": "p_pc(1)",
+   "n_files": 15,
+   "reachable_missing": 0,
+   "files_per_key=3": 2526,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "runs/p2e3_f1_k0_s42/pred_cv.jsonl": "7f1016f3fe1f024d112d9ce6731d78d441f9ea82a70add7afc3014595556cd92",
+    "runs/p2e3_f1_k0_s43/pred_cv.jsonl": "961094ef1fcbdf7af7d47b568c232b4af9392eb1f8877467ca9354b0cc2fc1ab",
+    "runs/p2e3_f1_k0_s44/pred_cv.jsonl": "96c1b18f74a3bdb680bdfdeb30a5aa795ca55277c2df6bffe7b041226336905c",
+    "runs/p2e3_f1_k1_s42/pred_cv.jsonl": "4ba1109a61893f46ed83e2ab094867c8c09de15b71078be3cb44f0e23e688011",
+    "runs/p2e3_f1_k1_s43/pred_cv.jsonl": "73c6d14ab503f281f23a797e0f63ad664a30483c37a8dbe56e59100f265c907e",
+    "runs/p2e3_f1_k1_s44/pred_cv.jsonl": "aae30ce2d18ca83d593228baa72b657fb6034071e729431cebf2c6034d739ed3",
+    "runs/p2e3_f1_k2_s42/pred_cv.jsonl": "b4109875b5a63c86ec1614677eb3835260c50675147c5f58bd7360a64bd34522",
+    "runs/p2e3_f1_k2_s43/pred_cv.jsonl": "333ae6d6499c5d4f57636058d9f63792d94f101b9de38931aab5b07922f654bd",
+    "runs/p2e3_f1_k2_s44/pred_cv.jsonl": "9c2eac8e5619a8e0f8466402f8e096d7d2bb993a0e7ba74ddc0d58ff89009fe2",
+    "runs/p2e3_f1_k3_s42/pred_cv.jsonl": "36927305d9fa619f1262e8698c87f5c3dc0488f9ed2168d147f2e9ec7aa1915f",
+    "runs/p2e3_f1_k3_s43/pred_cv.jsonl": "f61b4a5b3d05ca10070ceef7e5206f7fc0401168e175310f3c3818d536d8e4ee",
+    "runs/p2e3_f1_k3_s44/pred_cv.jsonl": "3ca77f9e1c0aa1c455ea35360090668bca45c0a04cd19a03bc0b3bccbbd40dd2",
+    "runs/p2e3_f1_k4_s42/pred_cv.jsonl": "99ea61f10e92e140ac0995b48cac0fe7ea7a1df52a7392ac6c6fea32fa5d6dc0",
+    "runs/p2e3_f1_k4_s43/pred_cv.jsonl": "25737aa3b66459877de7e9195e3175722fe2c7eb78b4fb4e2fa945942ef7c6b6",
+    "runs/p2e3_f1_k4_s44/pred_cv.jsonl": "1fc650da746c38198033f24b5ee84ee511ebaa22ec6e2ccd477b831b52a2165d"
+   }
+  },
+  "F0": {
+   "auprc": 0.40239144257467957,
+   "ci95": [
+    0.2968333041508714,
+    0.5327391115887333
+   ],
+   "source": "runs/p2e3_f0_k0_s42/pred_cv.jsonl,runs/p2e3_f0_k0_s43/pred_cv.jsonl,runs/p2e3_f0_k0_s44/pred_cv.jsonl,runs/p2e3_f0_k1_s42/pred_cv.jsonl,runs/p2e3_f0_k1_s43/pred_cv.jsonl,runs/p2e3_f0_k1_s44/pred_cv.jsonl,runs/p2e3_f0_k2_s42/pred_cv.jsonl,runs/p2e3_f0_k2_s43/pred_cv.jsonl,runs/p2e3_f0_k2_s44/pred_cv.jsonl,runs/p2e3_f0_k3_s42/pred_cv.jsonl,runs/p2e3_f0_k3_s43/pred_cv.jsonl,runs/p2e3_f0_k3_s44/pred_cv.jsonl,runs/p2e3_f0_k4_s42/pred_cv.jsonl,runs/p2e3_f0_k4_s43/pred_cv.jsonl,runs/p2e3_f0_k4_s44/pred_cv.jsonl",
+   "kind": "p_pc(1)",
+   "n_files": 15,
+   "reachable_missing": 0,
+   "files_per_key=3": 2526,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "runs/p2e3_f0_k0_s42/pred_cv.jsonl": "164e0dbc3eaef87fdbbb26c1cf76a5319423944b2fcaee008e6cde6b19018a8a",
+    "runs/p2e3_f0_k0_s43/pred_cv.jsonl": "b46f6d0c31075cd330beed8ccf0d7a02db3086a473f0cd53424e7c45129e2edc",
+    "runs/p2e3_f0_k0_s44/pred_cv.jsonl": "90d3a41228c1d5a7c838fe1e4d6ae711477c22aacbca925f165b70344699ae55",
+    "runs/p2e3_f0_k1_s42/pred_cv.jsonl": "38a73f4456ea891063322115b205a3feca960baff7112f2b7c1da9f820420711",
+    "runs/p2e3_f0_k1_s43/pred_cv.jsonl": "32edf576f4cbb5c5ec7cca66f33c1dcfa66b3bb1a31cd0ff62896a7918e2644a",
+    "runs/p2e3_f0_k1_s44/pred_cv.jsonl": "d2532760f24e6c0a9a100c27f9186bfe0c815f630cc1fefa4ced0a81828531f4",
+    "runs/p2e3_f0_k2_s42/pred_cv.jsonl": "a8191ef4c249b58837bcebc06a9080100ae0dfaebf7930c9c12c7492126b79aa",
+    "runs/p2e3_f0_k2_s43/pred_cv.jsonl": "807364dd61b4ce641b7f8d8b4593092c20893e9583b29ed023d37e8c91b312f6",
+    "runs/p2e3_f0_k2_s44/pred_cv.jsonl": "97ec341f3d6add52f22155348cfde9ccc938f00c96d6ff9cafd3fbd792c284ef",
+    "runs/p2e3_f0_k3_s42/pred_cv.jsonl": "901a1d5520ca57aa1965e42550bdf613b6ec05bd183a933ae675c5c9787c19c3",
+    "runs/p2e3_f0_k3_s43/pred_cv.jsonl": "1a1f5f43ad73a49a4ae06df1103c407e20ee1aacbe1724700a3a70e559a5849f",
+    "runs/p2e3_f0_k3_s44/pred_cv.jsonl": "d9c50a3bf66a38f65ddda91c26918aac64519bf2ff0ae4e0659c4a60136193e1",
+    "runs/p2e3_f0_k4_s42/pred_cv.jsonl": "e54aedf121610031c60a8e53dbe5b5f89bd4dbaa696a6154900469d4fefaefd4",
+    "runs/p2e3_f0_k4_s43/pred_cv.jsonl": "461d027a85d55c1e883e0436c06a2e9845f7236d9611c54bc188d23d11c7c0fe",
+    "runs/p2e3_f0_k4_s44/pred_cv.jsonl": "868fb7669938e277bdccc6263b9f318467b41b041aec8f5267580c4504c78910"
+   }
+  },
+  "J": {
+   "auprc": 0.49454620127267657,
+   "ci95": [
+    0.37587458461724405,
+    0.6081443262321143
+   ],
+   "source": "runs/p2e3_j_k0_s42/pred_cv.jsonl,runs/p2e3_j_k0_s43/pred_cv.jsonl,runs/p2e3_j_k0_s44/pred_cv.jsonl,runs/p2e3_j_k1_s42/pred_cv.jsonl,runs/p2e3_j_k1_s43/pred_cv.jsonl,runs/p2e3_j_k1_s44/pred_cv.jsonl,runs/p2e3_j_k2_s42/pred_cv.jsonl,runs/p2e3_j_k2_s43/pred_cv.jsonl,runs/p2e3_j_k2_s44/pred_cv.jsonl,runs/p2e3_j_k3_s42/pred_cv.jsonl,runs/p2e3_j_k3_s43/pred_cv.jsonl,runs/p2e3_j_k3_s44/pred_cv.jsonl,runs/p2e3_j_k4_s42/pred_cv.jsonl,runs/p2e3_j_k4_s43/pred_cv.jsonl,runs/p2e3_j_k4_s44/pred_cv.jsonl",
+   "kind": "p(Pos)+p(Neg)",
+   "n_files": 15,
+   "reachable_missing": 0,
+   "files_per_key=3": 2526,
+   "unreachable_nonzero_in_file": 0,
+   "dropped": false,
+   "sha256": {
+    "runs/p2e3_j_k0_s42/pred_cv.jsonl": "e6b92c9d10c50b8bc173b6883125e4058da13aa536638a6281864c34e6a0c47b",
+    "runs/p2e3_j_k0_s43/pred_cv.jsonl": "93d5b6f85d4afa02c9827be030ead4a6ff38ce1167b7f393a60775d386b6bd42",
+    "runs/p2e3_j_k0_s44/pred_cv.jsonl": "00adc8772cda81f892fb2ea2e939d3a4085a6519aa181e8da432e133cc8bc708",
+    "runs/p2e3_j_k1_s42/pred_cv.jsonl": "d63e8966189ff96a9c48c3ab80d6cf4946091f8a3e4fcc2efa28416c7fa5f372",
+    "runs/p2e3_j_k1_s43/pred_cv.jsonl": "285d657893159ec2333c597d886fe5cbb69aa9f7b31dfdefe7f78cc8b6cbbd65",
+    "runs/p2e3_j_k1_s44/pred_cv.jsonl": "dc5406e0e661f355bfe2fa9ffad2286611ff6e912fefd69a8b4e80015c03c26b",
+    "runs/p2e3_j_k2_s42/pred_cv.jsonl": "5ad42a9e5a241a4502a292f28a3a12e3d7751417a36394996616f7381a6f47b8",
+    "runs/p2e3_j_k2_s43/pred_cv.jsonl": "b621c82605f253473d514d8ec96ffbac5f30c1438ffca7163c322a486b1ad473",
+    "runs/p2e3_j_k2_s44/pred_cv.jsonl": "c611c29ae7eca098e6f77084562550ad47cc7a11a6321c594ed4c0435cd05156",
+    "runs/p2e3_j_k3_s42/pred_cv.jsonl": "edad348e45f85ab756308eb15719ae8cd38a6f4f10f5b4a428472f516673a424",
+    "runs/p2e3_j_k3_s43/pred_cv.jsonl": "1b844e225e42abfcbe49b96b78bd59e092f3c0adc893833860ce4e43b8a8fc00",
+    "runs/p2e3_j_k3_s44/pred_cv.jsonl": "3cf847befe7609f96cfd830d9312a94d9183843879c919668e63f45008378341",
+    "runs/p2e3_j_k4_s42/pred_cv.jsonl": "567d08d115179c7a5a6908afbf22a2eca1bbdc0fcf0fd8539432aa1857a9048f",
+    "runs/p2e3_j_k4_s43/pred_cv.jsonl": "f75c1832d6c732be139436fca5bd54c327964ba1fcd579f918dc780081b1badd",
+    "runs/p2e3_j_k4_s44/pred_cv.jsonl": "9cd0e8cf713e377a67b98b53115be57586584711b0654748b2cfd56ba18d7c3b"
+   }
+  }
+ },
+ "family": {
+  "H_E3a": {
+   "test": "PL - Z > 0",
+   "diff": 0.2903778438105249,
+   "ci95": [
+    0.18600168658898053,
+    0.39531971590615744
+   ],
+   "p": 0.0,
+   "p_holm": 0.0,
+   "reject": true
+  },
+  "H_E3b": {
+   "test": "FL - F0 != 0",
+   "diff": 0.0889875945393725,
+   "ci95": [
+    0.023435828946235266,
+    0.14826301537172035
+   ],
+   "p": 0.0112,
+   "p_holm": 0.0112,
+   "reject": true
+  }
+ },
+ "differences": {
+  "Z - C": {
+   "diff": 0.017729032923453514,
+   "ci95": [
+    -0.024574445336550066,
+    0.08441901920046609
+   ]
+  },
+  "Z - S": {
+   "diff": -0.017863889457617688,
+   "ci95": [
+    -0.06930475722778648,
+    0.036454200178649254
+   ]
+  },
+  "Z - PL": {
+   "diff": -0.2903778438105249,
+   "ci95": [
+    -0.3953197159061575,
+    -0.18600168658898064
+   ]
+  },
+  "Z - P0": {
+   "diff": -0.03116163819037343,
+   "ci95": [
+    -0.12706817428694597,
+    0.05045953973812235
+   ]
+  },
+  "Z - FL": {
+   "diff": -0.2931583973851527,
+   "ci95": [
+    -0.4022990798707065,
+    -0.18391243878765157
+   ]
+  },
+  "Z - F0": {
+   "diff": -0.20417080284578024,
+   "ci95": [
+    -0.31776907182089337,
+    -0.09752724032724035
+   ]
+  },
+  "Z - J": {
+   "diff": -0.2963255615437772,
+   "ci95": [
+    -0.3768217260563658,
+    -0.2029784743193008
+   ]
+  },
+  "C - S": {
+   "diff": -0.0355929223810712,
+   "ci95": [
+    -0.09482888459439358,
+    -0.002734746450754145
+   ]
+  },
+  "C - PL": {
+   "diff": -0.3081068767339784,
+   "ci95": [
+    -0.42962410069888635,
+    -0.20465890282412735
+   ]
+  },
+  "C - P0": {
+   "diff": -0.048890671113826945,
+   "ci95": [
+    -0.14900191829686205,
+    0.015161849888680504
+   ]
+  },
+  "C - FL": {
+   "diff": -0.3108874303086062,
+   "ci95": [
+    -0.4358288524783554,
+    -0.19825884808794725
+   ]
+  },
+  "C - F0": {
+   "diff": -0.22189983576923375,
+   "ci95": [
+    -0.35004956264530146,
+    -0.11710671713082277
+   ]
+  },
+  "C - J": {
+   "diff": -0.3140545944672307,
+   "ci95": [
+    -0.417670272380902,
+    -0.2102211450326468
+   ]
+  },
+  "S - PL": {
+   "diff": -0.27251395435290715,
+   "ci95": [
+    -0.37371497923891145,
+    -0.1760228635526608
+   ]
+  },
+  "S - P0": {
+   "diff": -0.013297748732755743,
+   "ci95": [
+    -0.09612982410961073,
+    0.058210649161579406
+   ]
+  },
+  "S - FL": {
+   "diff": -0.27529450792753507,
+   "ci95": [
+    -0.38331456295373295,
+    -0.1667976933265284
+   ]
+  },
+  "S - F0": {
+   "diff": -0.18630691338816255,
+   "ci95": [
+    -0.30475481334618065,
+    -0.07584486181788021
+   ]
+  },
+  "S - J": {
+   "diff": -0.2784616720861596,
+   "ci95": [
+    -0.3683401144844228,
+    -0.175486312613473
+   ]
+  },
+  "PL - P0": {
+   "diff": 0.25921620562015146,
+   "ci95": [
+    0.16988109157569395,
+    0.3444682972808045
+   ]
+  },
+  "PL - FL": {
+   "diff": -0.0027805535746278642,
+   "ci95": [
+    -0.05128216442122678,
+    0.04671781417615095
+   ]
+  },
+  "PL - F0": {
+   "diff": 0.08620704096474463,
+   "ci95": [
+    -0.002138107085599274,
+    0.16288464516020743
+   ]
+  },
+  "PL - J": {
+   "diff": -0.005947717733252367,
+   "ci95": [
+    -0.0792255124737015,
+    0.07556372644951415
+   ]
+  },
+  "P0 - FL": {
+   "diff": -0.26199675919477927,
+   "ci95": [
+    -0.35117804530328406,
+    -0.15925445020242662
+   ]
+  },
+  "P0 - F0": {
+   "diff": -0.1730091646554068,
+   "ci95": [
+    -0.26431365952871055,
+    -0.07934424259808028
+   ]
+  },
+  "P0 - J": {
+   "diff": -0.2651639233534038,
+   "ci95": [
+    -0.35569983412165856,
+    -0.15391979535450864
+   ]
+  },
+  "FL - F0": {
+   "diff": 0.0889875945393725,
+   "ci95": [
+    0.023435828946235266,
+    0.14826301537172035
+   ]
+  },
+  "FL - J": {
+   "diff": -0.0031671641586245025,
+   "ci95": [
+    -0.07309288900395536,
+    0.0800669998775927
+   ]
+  },
+  "F0 - J": {
+   "diff": -0.092154758697997,
+   "ci95": [
+    -0.15317173185144722,
+    -0.013418780350463417
+   ]
+  }
+ },
+ "notes": [
+  "rows: cred_s10.load_rows over train/val/test restricted to the 159 PMIDs of data/CRED/cv/fold*.txt; y = label == '1'; unreachable rows score 0 (strict) whatever an arm file says",
+  "an arm file is either per-row scores {pmid, gene_id, disease_id, score} or raw biocausal.score rows (per pair p_pc(1) if probs_pc is present, else p(Pos)+p(Neg)); several files average per key (seed ensemble), then a row takes the max over its candidate pairs",
+  "dropped = a reachable row without a score, or a non-uniform number of files per key (e.g. 14 of 15 OOF files)",
+  "C = same_sent: the CRED authors' flag, zeroed on unreachable rows (strict); same_sent_raw keeps the flag there",
+  "document bootstrap: one resample = a multiset of the 159 PMIDs; all arms share the resamples (paired)"
+ ]
+}

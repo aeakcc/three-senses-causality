@@ -1,0 +1,4 @@
+{
+ "name": "p2e5_00_smoke",
+ "cmd": "cd /d D:\\model-p2e5 && D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.train_re --name p2e5_00_smoke --runs-dir D:\\model-second\\runs --backbone michiyasunaga/BioLinkBERT-base --init-from D:\\model-second\\runs\\re_bl_base_bc8all_s42\\best --train D:\\model-second\\data\\empty.json --dev D:\\model-second\\data\\BioRED\\Dev.BioC.JSON --heldout D:\\model-second\\data\\BioRED\\Test.BioC.JSON --joint D:\\model-second\\data\\paper2\\e5\\clingen.json --label-handling set --corpus-tag --aux-heads ev --aux-weight 1.0 --epochs 1 --stop-epoch 1 --patience 6 --batch-docs 4 --grad-accum 2 --eval-batch-docs 8 --lr-encoder 3e-5 --lr-head 1e-4 --seed 42"
+}

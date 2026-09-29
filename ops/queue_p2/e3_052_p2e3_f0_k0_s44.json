@@ -1,0 +1,4 @@
+{
+ "name": "p2e3_f0_k0_s44",
+ "cmd": "cd /d D:\\model-p2 && D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.train_re --name p2e3_f0_k0_s44 --runs-dir D:\\model-second\\runs --backbone michiyasunaga/BioLinkBERT-base --train D:\\model-second\\data\\empty.json --dev D:\\model-second\\data\\BioRED\\Dev.BioC.JSON --heldout D:\\model-second\\data\\BioRED\\Test.BioC.JSON D:\\model-second\\data\\CRED\\cv\\fold0.txt --joint D:\\model-second\\data\\CRED\\cv\\pc\\cred.json --label-handling set --corpus-tag --aux-heads pc --aux-weight 1.0 --patience 6 --batch-docs 4 --grad-accum 2 --eval-batch-docs 8 --lr-encoder 3e-5 --lr-head 1e-4 --epochs 12 --stop-epoch 12 --seed 44"
+}

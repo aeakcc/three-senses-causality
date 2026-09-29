@@ -1,0 +1,13 @@
+{
+ "n_dg_pairs": 1658,
+ "n_gold_signed": 119,
+ "mean_abs_delta": 0.01623188372906842,
+ "max_abs_delta": 0.1805884936547706,
+ "spearman": 0.9999584639909611,
+ "argmax_agreement_all_pairs": 0.9996842437638144,
+ "mean_s_gold_signed": {
+  "biored_tag": 0.7288127899582063,
+  "cred_tag": 0.7286500794010173
+ },
+ "micro_f1_dev_biored_tag": 0.6395147313691507
+}

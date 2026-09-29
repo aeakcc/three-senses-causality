@@ -1,0 +1,691 @@
+{
+ "tfidf": {
+  "C": 10.0,
+  "oof_macro_auroc": {
+   "0.1": 0.9106776308596569,
+   "1.0": 0.9410448761983528,
+   "10.0": 0.9450841591819918
+  }
+ },
+ "majority_prior": {
+  "genetic": 0.6893180734382451,
+  "expression": 0.03385789222699094,
+  "model_rescue": 0.1356700047687172,
+  "functional_alteration": 0.0736766809728183,
+  "biochemical_interaction": 0.06747734859322842
+ },
+ "sets": {
+  "test_2026": {
+   "classes": [
+    "genetic",
+    "expression",
+    "model_rescue",
+    "functional_alteration",
+    "biochemical_interaction"
+   ],
+   "n_units": 244,
+   "n_pmids": 244,
+   "n_positive": {
+    "genetic": 170,
+    "expression": 20,
+    "model_rescue": 43,
+    "functional_alteration": 28,
+    "biochemical_interaction": 18
+   },
+   "n_single_class": 219,
+   "systems": {
+    "V0": {
+     "auroc_macro": 0.8895687129435752,
+     "auroc_macro_ci": [
+      0.8554566040657606,
+      0.9222652466692607
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9809220985691574,
+       "ci": [
+        0.9592238690146905,
+        0.9962233943675063
+       ]
+      },
+      "expression": {
+       "auroc": 0.8470982142857143,
+       "ci": [
+        0.7598284979216948,
+        0.9227001395312102
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9570750896679394,
+       "ci": [
+        0.9238634227614491,
+        0.9823865922223095
+       ]
+      },
+      "functional_alteration": {
+       "auroc": 0.8257275132275133,
+       "ci": [
+        0.7299091291978106,
+        0.9056945980294226
+       ]
+      },
+      "biochemical_interaction": {
+       "auroc": 0.8370206489675516,
+       "ci": [
+        0.7365960177432217,
+        0.9279538817615521
+       ]
+      }
+     },
+     "macro_f1": 0.673633834289572,
+     "macro_f1_ci": [
+      0.5591933622920146,
+      0.7686630802614279
+     ]
+    },
+    "VL": {
+     "auroc_macro": 0.9039956112788762,
+     "auroc_macro_ci": [
+      0.8727470003086412,
+      0.9338921518941908
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9857313195548489,
+       "ci": [
+        0.9692194991554974,
+        0.9973179971675611
+       ]
+      },
+      "expression": {
+       "auroc": 0.8622767857142857,
+       "ci": [
+        0.7842626190602663,
+        0.9305270467836256
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9591576998727294,
+       "ci": [
+        0.9314175009563971,
+        0.9811347036832849
+       ]
+      },
+      "functional_alteration": {
+       "auroc": 0.8440806878306878,
+       "ci": [
+        0.7510072523999155,
+        0.9218107476635514
+       ]
+      },
+      "biochemical_interaction": {
+       "auroc": 0.8687315634218289,
+       "ci": [
+        0.7841549912949369,
+        0.9446910212719177
+       ]
+      }
+     },
+     "macro_f1": 0.7188042430086788,
+     "macro_f1_ci": [
+      0.6012056085262727,
+      0.8148396941549114
+     ]
+    },
+    "VP": {
+     "auroc_macro": 0.8963491344125349,
+     "auroc_macro_ci": [
+      0.8606907288630884,
+      0.9291121325633767
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9847376788553259,
+       "ci": [
+        0.9649682837152852,
+        0.9979476437285302
+       ]
+      },
+      "expression": {
+       "auroc": 0.8216517857142858,
+       "ci": [
+        0.7138272748145837,
+        0.9141607943625881
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9627444174476455,
+       "ci": [
+        0.9347714469038881,
+        0.9846157224418094
+       ]
+      },
+      "functional_alteration": {
+       "auroc": 0.83994708994709,
+       "ci": [
+        0.7459032043407043,
+        0.9176587301587301
+       ]
+      },
+      "biochemical_interaction": {
+       "auroc": 0.8726647000983284,
+       "ci": [
+        0.7880259475761671,
+        0.9481732866664931
+       ]
+      }
+     },
+     "macro_f1": 0.6574888198836881,
+     "macro_f1_ci": [
+      0.5430186081137153,
+      0.7529260575031603
+     ]
+    },
+    "TFIDF": {
+     "auroc_macro": 0.9006435451727205,
+     "auroc_macro_ci": [
+      0.8742067582997877,
+      0.9261208843693155
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9690779014308426,
+       "ci": [
+        0.9435687411178221,
+        0.9882355129551821
+       ]
+      },
+      "expression": {
+       "auroc": 0.9131696428571429,
+       "ci": [
+        0.8613832536609777,
+        0.9564896755162242
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9552238805970149,
+       "ci": [
+        0.9262256098661241,
+        0.9788666917059524
+       ]
+      },
+      "functional_alteration": {
+       "auroc": 0.8034060846560847,
+       "ci": [
+        0.7240610328638498,
+        0.8754964278401778
+       ]
+      },
+      "biochemical_interaction": {
+       "auroc": 0.8623402163225172,
+       "ci": [
+        0.7714615230743351,
+        0.9410635964912281
+       ]
+      }
+     },
+     "macro_f1": 0.526475583864119,
+     "macro_f1_ci": [
+      0.43899967320261435,
+      0.6010313043191963
+     ]
+    },
+    "MAJORITY": {
+     "auroc_macro": 0.5,
+     "auroc_macro_ci": [
+      0.5,
+      0.5
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "expression": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "functional_alteration": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "biochemical_interaction": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      }
+     },
+     "macro_f1": 0.16388140161725068,
+     "macro_f1_ci": [
+      0.1553072625698324,
+      0.171875
+     ]
+    }
+   },
+   "differences": {
+    "V0-VL": {
+     "auroc_macro": -0.014426898335300975,
+     "ci": [
+      -0.028876627011063135,
+      -0.0001619072399257554
+     ],
+     "p_le0": 0.9764,
+     "p_two_sided": 0.0472
+    },
+    "V0-VP": {
+     "auroc_macro": -0.006780421468959741,
+     "ci": [
+      -0.02123893111169524,
+      0.008933485174269914
+     ],
+     "p_le0": 0.8198,
+     "p_two_sided": 0.3604
+    },
+    "V0-TFIDF": {
+     "auroc_macro": -0.011074832229145293,
+     "ci": [
+      -0.033598977859652907,
+      0.01074560493888938
+     ],
+     "p_le0": 0.8347,
+     "p_two_sided": 0.3306
+    },
+    "V0-MAJORITY": {
+     "auroc_macro": 0.3895687129435752,
+     "ci": [
+      0.35545660406576063,
+      0.4222652466692607
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VL-VP": {
+     "auroc_macro": 0.007646476866341234,
+     "ci": [
+      -0.00944363041340763,
+      0.02601645498464024
+     ],
+     "p_le0": 0.1945,
+     "p_two_sided": 0.389
+    },
+    "VL-TFIDF": {
+     "auroc_macro": 0.0033520661061556822,
+     "ci": [
+      -0.018431735342684434,
+      0.024011855164906084
+     ],
+     "p_le0": 0.3718,
+     "p_two_sided": 0.7436
+    },
+    "VL-MAJORITY": {
+     "auroc_macro": 0.4039956112788762,
+     "ci": [
+      0.3727470003086412,
+      0.43389215189419084
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VP-TFIDF": {
+     "auroc_macro": -0.004294410760185552,
+     "ci": [
+      -0.028809402743224063,
+      0.01761293144201518
+     ],
+     "p_le0": 0.6301,
+     "p_two_sided": 0.7398
+    },
+    "VP-MAJORITY": {
+     "auroc_macro": 0.39634913441253494,
+     "ci": [
+      0.3606907288630884,
+      0.42911213256337666
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "TFIDF-MAJORITY": {
+     "auroc_macro": 0.4006435451727205,
+     "ci": [
+      0.3742067582997877,
+      0.42612088436931544
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    }
+   }
+  },
+  "rgd_ext": {
+   "classes": [
+    "genetic",
+    "expression",
+    "model_rescue"
+   ],
+   "n_units": 6312,
+   "n_pmids": 5602,
+   "n_positive": {
+    "genetic": 2937,
+    "expression": 3036,
+    "model_rescue": 381
+   },
+   "n_single_class": 6270,
+   "systems": {
+    "V0": {
+     "auroc_macro": 0.9636095205413581,
+     "auroc_macro_ci": [
+      0.9557209568056858,
+      0.9707801373279784
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9792301037844109,
+       "ci": [
+        0.9753530737475222,
+        0.9827760068319418
+       ]
+      },
+      "expression": {
+       "auroc": 0.9764695851652373,
+       "ci": [
+        0.9725857410850567,
+        0.9800533708706975
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.935128872674426,
+       "ci": [
+        0.9148718083867164,
+        0.9534736199552367
+       ]
+      }
+     }
+    },
+    "VL": {
+     "auroc_macro": 0.9650584794685987,
+     "auroc_macro_ci": [
+      0.957295931764728,
+      0.9722300677568935
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9834300054225148,
+       "ci": [
+        0.9801170047833936,
+        0.9865324397380438
+       ]
+      },
+      "expression": {
+       "auroc": 0.981603038668256,
+       "ci": [
+        0.9784195708850094,
+        0.9845145539302084
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9301423943150252,
+       "ci": [
+        0.909645069108092,
+        0.9488532534353328
+       ]
+      }
+     }
+    },
+    "VP": {
+     "auroc_macro": 0.9638187240397394,
+     "auroc_macro_ci": [
+      0.9558288883026278,
+      0.9713350293147567
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9844252260432036,
+       "ci": [
+        0.9811977665094159,
+        0.9873505880759522
+       ]
+      },
+      "expression": {
+       "auroc": 0.9808120623338015,
+       "ci": [
+        0.9775980273069838,
+        0.9838082908884824
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.9262188837422131,
+       "ci": [
+        0.9049800531175157,
+        0.9459415015143284
+       ]
+      }
+     }
+    },
+    "TFIDF": {
+     "auroc_macro": 0.9179168295874468,
+     "auroc_macro_ci": [
+      0.9068116161352079,
+      0.9283511597860904
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.9452832948713098,
+       "ci": [
+        0.9390136448261095,
+        0.9510710254495925
+       ]
+      },
+      "expression": {
+       "auroc": 0.930312642269164,
+       "ci": [
+        0.9235729147867349,
+        0.9366936720350565
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.8781545516218667,
+       "ci": [
+        0.84783869636787,
+        0.9063296493064755
+       ]
+      }
+     }
+    },
+    "MAJORITY": {
+     "auroc_macro": 0.5,
+     "auroc_macro_ci": [
+      0.5,
+      0.5
+     ],
+     "n_undefined": 0,
+     "auroc": {
+      "genetic": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "expression": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      },
+      "model_rescue": {
+       "auroc": 0.5,
+       "ci": [
+        0.5,
+        0.5
+       ]
+      }
+     }
+    }
+   },
+   "differences": {
+    "V0-VL": {
+     "auroc_macro": -0.0014489589272406178,
+     "ci": [
+      -0.004578057835509894,
+      0.0016105919948026246
+     ],
+     "p_le0": 0.8236,
+     "p_two_sided": 0.3528
+    },
+    "V0-VP": {
+     "auroc_macro": -0.00020920349838138286,
+     "ci": [
+      -0.003072392455645076,
+      0.0025473337555782316
+     ],
+     "p_le0": 0.5627,
+     "p_two_sided": 0.8746
+    },
+    "V0-TFIDF": {
+     "auroc_macro": 0.045692690953911264,
+     "ci": [
+      0.037132374615621244,
+      0.05431055186679571
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "V0-MAJORITY": {
+     "auroc_macro": 0.46360952054135807,
+     "ci": [
+      0.4557209568056858,
+      0.47078013732797847
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VL-VP": {
+     "auroc_macro": 0.001239755428859235,
+     "ci": [
+      -0.0011612130844381424,
+      0.003692254556306788
+     ],
+     "p_le0": 0.1579,
+     "p_two_sided": 0.3158
+    },
+    "VL-TFIDF": {
+     "auroc_macro": 0.04714164988115188,
+     "ci": [
+      0.0399297698320125,
+      0.05463502987095348
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VL-MAJORITY": {
+     "auroc_macro": 0.4650584794685987,
+     "ci": [
+      0.4572959317647281,
+      0.4722300677568935
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VP-TFIDF": {
+     "auroc_macro": 0.045901894452292646,
+     "ci": [
+      0.038668954348865275,
+      0.053239561964974126
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "VP-MAJORITY": {
+     "auroc_macro": 0.46381872403973945,
+     "ci": [
+      0.45582888830262774,
+      0.4713350293147566
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    },
+    "TFIDF-MAJORITY": {
+     "auroc_macro": 0.4179168295874468,
+     "ci": [
+      0.4068116161352079,
+      0.42835115978609045
+     ],
+     "p_le0": 0.0,
+     "p_two_sided": 0.0
+    }
+   }
+  }
+ },
+ "family": {
+  "H_E5a": {
+   "diff": "AUROC_macro(V0) - AUROC_macro(TFIDF) on test_2026",
+   "alternative": "greater",
+   "missing": false,
+   "p": 0.8347,
+   "p_holm": 0.8347,
+   "reject": false
+  },
+  "H_E5b": {
+   "diff": "AUROC_macro(VL) - AUROC_macro(V0) on test_2026",
+   "alternative": "two-sided",
+   "missing": false,
+   "p": 0.0472,
+   "p_holm": 0.0944,
+   "reject": false
+  }
+ },
+ "meta": {
+  "ev_classes": [
+   "genetic",
+   "expression",
+   "model_rescue",
+   "functional_alteration",
+   "biochemical_interaction"
+  ],
+  "n_boot": 10000,
+  "seed": 0,
+  "runs": "/home/aeakcc/statya/_code/biocausal/runs",
+  "e5": "/home/aeakcc/statya/_code/biocausal/data/paper2/e5",
+  "sha256": {
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/train_units.tsv": "9ed875932501144d8f7668765aa1b0811dfeb08fd0e550f5e98aad1e813b5bff",
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/clingen.json": "b7b3240e8321d31123c95236e33add22b807d8ca34f7eff49f9353441f4d5e0e",
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/test_2026_units.tsv": "aba263f27468867312e91db6420eb68dcd00dbe4d91b73dd30bba53e27045cc1",
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/test_2026_docs.json": "534c1fdc4b74c53bf916022e13de0409676812784bd89fb31030d3b4ca2950bf",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_v0/pred_test_2026.jsonl": "cf37a060feb644828c0bc1f2f03ad09b80a941b7bce97175a23145ad95c5f942",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_vl/pred_test_2026.jsonl": "16fc220ae83234deb0a4673189dcd51d050b59cd701455abc1d846fd680fbea5",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_vp/pred_test_2026.jsonl": "8572c13c5c2e90622b01c1e61eed3488a020eba50a7565069c6c3f937c58a766",
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/rgd_ext_units.tsv": "9bc360f663f3735d5eb2bcf7586cce97d65ed9d82154f5d21720a5362b9dc4e2",
+   "/home/aeakcc/statya/_code/biocausal/data/paper2/e5/rgd_ext_docs.json": "ec46eaa4b9ad894dc3fd79e4e6d98174a389f6bdf18305d26f2c545d30cabb2e",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_v0/pred_rgd_ext.jsonl": "e1442c002ce568ddd71552e3803dc961e55685fe2355845dd1b0a987281b8d8d",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_vl/pred_rgd_ext.jsonl": "76120b81f67462ef4939357ba517aebc06ea53b4c019967983e11ca2db222b2e",
+   "/home/aeakcc/statya/_code/biocausal/runs/_p2e5_vp/pred_rgd_ext.jsonl": "6f08383df0441d7eff866e8742633aeb6b6c30a5bdaddbdd2bd985e02a518ac9"
+  }
+ }
+}

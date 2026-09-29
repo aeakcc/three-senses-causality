@@ -1,0 +1,4 @@
+{
+ "name": "_p2e1_P_swap_clingen_k",
+ "cmd": "cd /d D:\\model-second && set PYTHONPATH=D:\\model-p2&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --ensemble D:\\model-second\\runs\\a2_cred_bc8all_s42 D:\\model-second\\runs\\a2_cred_bc8all_s43 D:\\model-second\\runs\\a2_cred_bc8all_s44 --corpus cred --data D:\\model-second\\data\\paper2\\e1\\swap_clingen_k.json --tag swap_clingen_k --out-dir D:\\model-second\\runs\\_p2e1_P"
+}

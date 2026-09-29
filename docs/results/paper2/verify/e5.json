@@ -1,0 +1,370 @@
+{
+ "train": {
+  "n_units": 4194,
+  "pair_differs_from_extra": 0,
+  "tfidf": {
+   "C": 10,
+   "grid": {
+    "0.1": {
+     "pooled_oof_macro_auroc": 0.9106776308596569,
+     "mean_fold_macro_auroc": 0.9128603178527793
+    },
+    "1": {
+     "pooled_oof_macro_auroc": 0.9410448761983528,
+     "mean_fold_macro_auroc": 0.942016835052917
+    },
+    "10": {
+     "pooled_oof_macro_auroc": 0.9450841591819918,
+     "mean_fold_macro_auroc": 0.9460808935402476
+    }
+   }
+  },
+  "majority_prior": [
+   0.6893180734382451,
+   0.03385789222699094,
+   0.1356700047687172,
+   0.0736766809728183,
+   0.06747734859322842
+  ]
+ },
+ "inputs": {
+  "runs/_p2e5_v0/pred_test_2026.jsonl": "cf37a060feb644828c0bc1f2f03ad09b80a941b7bce97175a23145ad95c5f942",
+  "runs/_p2e5_v0/pred_rgd_ext.jsonl": "e1442c002ce568ddd71552e3803dc961e55685fe2355845dd1b0a987281b8d8d",
+  "runs/_p2e5_vl/pred_test_2026.jsonl": "16fc220ae83234deb0a4673189dcd51d050b59cd701455abc1d846fd680fbea5",
+  "runs/_p2e5_vl/pred_rgd_ext.jsonl": "76120b81f67462ef4939357ba517aebc06ea53b4c019967983e11ca2db222b2e",
+  "runs/_p2e5_vp/pred_test_2026.jsonl": "8572c13c5c2e90622b01c1e61eed3488a020eba50a7565069c6c3f937c58a766",
+  "runs/_p2e5_vp/pred_rgd_ext.jsonl": "6f08383df0441d7eff866e8742633aeb6b6c30a5bdaddbdd2bd985e02a518ac9"
+ },
+ "notes": [
+  "TEST_2026: macro one-vs-rest AUROC over the 5 classes, a multi-label unit is positive for each of its classes",
+  "RGD_EXT: the 3 mapped classes, each system's probabilities renormalised over them (also for argmax F1)",
+  "macro-F1: argmax on single-class units, F1 averaged over the set's classes",
+  "TFIDF: TfidfVectorizer(ngram_range=(1,2), min_df=2, sublinear_tf=True) on title + ' ' + abstract, LogisticRegression(lbfgs, multinomial, max_iter=1000), C by GroupKFold(5) on PMID; C picked on the pooled out-of-fold macro AUROC (the mean over folds is reported too)",
+  "MAJORITY: the class shares of the TRAIN units for every unit",
+  "PMID-cluster bootstrap per set; the systems share the resamples"
+ ],
+ "test_2026": {
+  "n_units": 244,
+  "n_single": 219,
+  "n_pmids": 244,
+  "systems": {
+   "V0": {
+    "macro_auroc": 0.8895687129435752,
+    "per_class_auroc": {
+     "genetic": 0.9809220985691574,
+     "expression": 0.8470982142857143,
+     "model_rescue": 0.9570750896679394,
+     "functional_alteration": 0.8257275132275133,
+     "biochemical_interaction": 0.8370206489675516
+    },
+    "macro_f1_single": 0.673633834289572,
+    "ci95": [
+     0.8540749585707105,
+     0.9226652937307238
+    ]
+   },
+   "VL": {
+    "macro_auroc": 0.9039956112788762,
+    "per_class_auroc": {
+     "genetic": 0.9857313195548489,
+     "expression": 0.8622767857142857,
+     "model_rescue": 0.9591576998727294,
+     "functional_alteration": 0.8440806878306878,
+     "biochemical_interaction": 0.8687315634218289
+    },
+    "macro_f1_single": 0.7188042430086788,
+    "ci95": [
+     0.8719283465928463,
+     0.9342767288360452
+    ]
+   },
+   "VP": {
+    "macro_auroc": 0.8963491344125349,
+    "per_class_auroc": {
+     "genetic": 0.9847376788553259,
+     "expression": 0.8216517857142858,
+     "model_rescue": 0.9627444174476455,
+     "functional_alteration": 0.83994708994709,
+     "biochemical_interaction": 0.8726647000983284
+    },
+    "macro_f1_single": 0.6574888198836881,
+    "ci95": [
+     0.8604819506346598,
+     0.9292275996343823
+    ]
+   },
+   "TFIDF": {
+    "macro_auroc": 0.9006435451727205,
+    "per_class_auroc": {
+     "genetic": 0.9690779014308426,
+     "expression": 0.9131696428571429,
+     "model_rescue": 0.9552238805970149,
+     "functional_alteration": 0.8034060846560847,
+     "biochemical_interaction": 0.8623402163225172
+    },
+    "macro_f1_single": 0.526475583864119,
+    "ci95": [
+     0.8734361473000382,
+     0.9266906377814591
+    ]
+   },
+   "MAJORITY": {
+    "macro_auroc": 0.5,
+    "per_class_auroc": {
+     "genetic": 0.5,
+     "expression": 0.5,
+     "model_rescue": 0.5,
+     "functional_alteration": 0.5,
+     "biochemical_interaction": 0.5
+    },
+    "macro_f1_single": 0.16388140161725068,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "differences": {
+   "V0 - VL": {
+    "diff": -0.014426898335300975,
+    "ci95": [
+     -0.028903432811715944,
+     -0.0004599543624568657
+    ]
+   },
+   "V0 - VP": {
+    "diff": -0.006780421468959741,
+    "ci95": [
+     -0.02160628018821495,
+     0.009114150155019702
+    ]
+   },
+   "V0 - TFIDF": {
+    "diff": -0.011074832229145293,
+    "ci95": [
+     -0.03385786500592776,
+     0.010144337800682822
+    ]
+   },
+   "V0 - MAJORITY": {
+    "diff": 0.3895687129435752,
+    "ci95": [
+     0.3540749585707105,
+     0.42266529373072376
+    ]
+   },
+   "VL - VP": {
+    "diff": 0.007646476866341234,
+    "ci95": [
+     -0.009268287916797329,
+     0.026720244582824692
+    ]
+   },
+   "VL - TFIDF": {
+    "diff": 0.0033520661061556822,
+    "ci95": [
+     -0.01771894604442443,
+     0.023724135641158058
+    ]
+   },
+   "VL - MAJORITY": {
+    "diff": 0.4039956112788762,
+    "ci95": [
+     0.3719283465928464,
+     0.43427672883604523
+    ]
+   },
+   "VP - TFIDF": {
+    "diff": -0.004294410760185552,
+    "ci95": [
+     -0.02952997888578734,
+     0.01731704076025928
+    ]
+   },
+   "VP - MAJORITY": {
+    "diff": 0.39634913441253494,
+    "ci95": [
+     0.3604819506346598,
+     0.42922759963438234
+    ]
+   },
+   "TFIDF - MAJORITY": {
+    "diff": 0.4006435451727205,
+    "ci95": [
+     0.37343614730003816,
+     0.42669063778145916
+    ]
+   }
+  },
+  "pair_differs_from_extra": 0
+ },
+ "family": {
+  "H_E5a": {
+   "test": "V0 - TFIDF > 0",
+   "diff": -0.011074832229145293,
+   "ci95": [
+    -0.03385786500592776,
+    0.010144337800682822
+   ],
+   "p": 0.841,
+   "p_holm": 0.841,
+   "reject": false
+  },
+  "H_E5b": {
+   "test": "VL - V0 != 0",
+   "diff": 0.014426898335300975,
+   "ci95": [
+    0.00045995436245686064,
+    0.02890343281171594
+   ],
+   "p": 0.0444,
+   "p_holm": 0.0888,
+   "reject": false
+  }
+ },
+ "rgd_ext": {
+  "n_units": 6312,
+  "n_single": 6270,
+  "n_pmids": 5602,
+  "systems": {
+   "V0": {
+    "macro_auroc": 0.9636095205413581,
+    "per_class_auroc": {
+     "genetic": 0.9792301037844109,
+     "expression": 0.9764695851652373,
+     "model_rescue": 0.935128872674426
+    },
+    "macro_f1_single": 0.8444447778329779,
+    "ci95": [
+     0.9559741406545081,
+     0.9707332104842921
+    ]
+   },
+   "VL": {
+    "macro_auroc": 0.9650584794685987,
+    "per_class_auroc": {
+     "genetic": 0.9834300054225148,
+     "expression": 0.981603038668256,
+     "model_rescue": 0.9301423943150252
+    },
+    "macro_f1_single": 0.8555728707523919,
+    "ci95": [
+     0.9573465707322465,
+     0.9722551209027892
+    ]
+   },
+   "VP": {
+    "macro_auroc": 0.9638187240397394,
+    "per_class_auroc": {
+     "genetic": 0.9844252260432036,
+     "expression": 0.9808120623338015,
+     "model_rescue": 0.9262188837422131
+    },
+    "macro_f1_single": 0.8507084175788827,
+    "ci95": [
+     0.9558927355920883,
+     0.9711488951683258
+    ]
+   },
+   "TFIDF": {
+    "macro_auroc": 0.9179168295874468,
+    "per_class_auroc": {
+     "genetic": 0.9452832948713098,
+     "expression": 0.930312642269164,
+     "model_rescue": 0.8781545516218667
+    },
+    "macro_f1_single": 0.5174239392356695,
+    "ci95": [
+     0.9067616885021187,
+     0.9284172972228807
+    ]
+   },
+   "MAJORITY": {
+    "macro_auroc": 0.5,
+    "per_class_auroc": {
+     "genetic": 0.5,
+     "expression": 0.5,
+     "model_rescue": 0.5
+    },
+    "macro_f1_single": 0.21122975230623955,
+    "ci95": [
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "differences": {
+   "V0 - VL": {
+    "diff": -0.0014489589272406178,
+    "ci95": [
+     -0.004640988734321222,
+     0.0016971409415314994
+    ]
+   },
+   "V0 - VP": {
+    "diff": -0.00020920349838138286,
+    "ci95": [
+     -0.0030259959209387095,
+     0.0027186341261875207
+    ]
+   },
+   "V0 - TFIDF": {
+    "diff": 0.045692690953911264,
+    "ci95": [
+     0.03708344218183715,
+     0.05444841654320968
+    ]
+   },
+   "V0 - MAJORITY": {
+    "diff": 0.46360952054135807,
+    "ci95": [
+     0.45597414065450814,
+     0.4707332104842921
+    ]
+   },
+   "VL - VP": {
+    "diff": 0.001239755428859235,
+    "ci95": [
+     -0.0011965060210083476,
+     0.0037360625630494873
+    ]
+   },
+   "VL - TFIDF": {
+    "diff": 0.04714164988115188,
+    "ci95": [
+     0.039759183129649614,
+     0.05473165725241365
+    ]
+   },
+   "VL - MAJORITY": {
+    "diff": 0.4650584794685987,
+    "ci95": [
+     0.4573465707322465,
+     0.47225512090278926
+    ]
+   },
+   "VP - TFIDF": {
+    "diff": 0.045901894452292646,
+    "ci95": [
+     0.038466208369196446,
+     0.05330492681242319
+    ]
+   },
+   "VP - MAJORITY": {
+    "diff": 0.46381872403973945,
+    "ci95": [
+     0.4558927355920883,
+     0.47114889516832575
+    ]
+   },
+   "TFIDF - MAJORITY": {
+    "diff": 0.4179168295874468,
+    "ci95": [
+     0.40676168850211863,
+     0.42841729722288074
+    ]
+   }
+  },
+  "pair_differs_from_extra": 0
+ }
+}

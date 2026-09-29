@@ -1,0 +1,183 @@
+{
+ "units": {
+  "clingen_docs": {
+   "n_units": 5456,
+   "n_scored": 5456
+  },
+  "rgd_docs": {
+   "n_units": 8238,
+   "n_scored": 8238
+  },
+  "percha_docs": {
+   "n_units": 5400,
+   "n_scored": 5400
+  },
+  "swap_clingen_u": {
+   "n_units": 3765,
+   "n_scored": 3765,
+   "swap_no_unit": 0,
+   "swap_several_units": 0
+  }
+ },
+ "hypotheses": {
+  "H1": {
+   "set": "clingen_docs",
+   "n_a": 3400,
+   "n_b": 228,
+   "n_pmids": 3494,
+   "n_both_dropped": 175,
+   "auroc": 0.5146916924664603,
+   "ci95": [
+    0.47914589066973656,
+    0.550962896018218
+   ],
+   "p": 0.2091,
+   "contrast": "GEN_CLV vs EXP_A+EXP_B+EXP_U",
+   "p_holm": 0.4182,
+   "reject": false
+  },
+  "H2": {
+   "set": "rgd_docs",
+   "n_a": 372,
+   "n_b": 3029,
+   "n_pmids": 2924,
+   "n_both_dropped": 13,
+   "auroc": 0.5073279090654143,
+   "ci95": [
+    0.47406169767000256,
+    0.541181036832615
+   ],
+   "p": 0.3296,
+   "contrast": "IGI+IMP vs IEP",
+   "p_holm": 0.4182,
+   "reject": false
+  },
+  "H3": {
+   "set": "percha_docs",
+   "n_a": 1200,
+   "n_b": 600,
+   "n_pmids": 1796,
+   "n_both_dropped": 0,
+   "auroc": 0.6061194444444444,
+   "ci95": [
+    0.5792898907129828,
+    0.6330487143215229
+   ],
+   "p": 0.0,
+   "contrast": "CAUSE+MUT vs UP",
+   "p_holm": 0.0,
+   "reject": true
+  },
+  "H4": {
+   "set": "swap_clingen_u",
+   "n_a": 3366,
+   "n_b": 224,
+   "n_pmids": 3457,
+   "n_both_dropped": 175,
+   "auroc": 0.5260058568882098,
+   "ci95": [
+    0.487557367630754,
+    0.563098480302491
+   ],
+   "p": 0.0862,
+   "contrast": "GEN_CLV vs EXP_A+EXP_B+EXP_U",
+   "p_holm": 0.2586,
+   "reject": false
+  }
+ },
+ "crossover": {
+  "L:clingen_docs:EXP_A+EXP_B+EXP_U vs GEN_CLV": {
+   "n_a": 228,
+   "n_b": 3400,
+   "n_pmids": 3494,
+   "n_both_dropped": 175,
+   "auroc": 0.4699767801857585,
+   "ci95": [
+    0.4269851087936891,
+    0.5137883885294454
+   ],
+   "p": 0.9157
+  },
+  "P:clingen_docs:GEN_CLV vs EXP_A+EXP_B+EXP_U": {
+   "n_a": 3400,
+   "n_b": 228,
+   "n_pmids": 3494,
+   "n_both_dropped": 175,
+   "auroc": 0.5864047987616099,
+   "ci95": [
+    0.5422257734571382,
+    0.6301867005777334
+   ],
+   "p": 0.0
+  },
+  "L:percha_docs:UP vs CAUSE+MUT": {
+   "n_a": 600,
+   "n_b": 1200,
+   "n_pmids": 1796,
+   "n_both_dropped": 0,
+   "auroc": 0.7657277777777778,
+   "ci95": [
+    0.7434789142451366,
+    0.7877402888442775
+   ],
+   "p": 0.0
+  },
+  "P:percha_docs:CAUSE+MUT vs UP": {
+   "n_a": 1200,
+   "n_b": 600,
+   "n_pmids": 1796,
+   "n_both_dropped": 0,
+   "auroc": 0.5390472222222222,
+   "ci95": [
+    0.512743804186491,
+    0.5655926365505551
+   ],
+   "p": 0.001
+  },
+  "P:rgd_docs:IGI+IMP vs IEP": {
+   "n_a": 372,
+   "n_b": 3029,
+   "n_pmids": 2924,
+   "n_both_dropped": 13,
+   "auroc": 0.46686421935625866,
+   "ci95": [
+    0.4337014236233183,
+    0.5004352756082943
+   ],
+   "p": 0.9737
+  },
+  "L:rgd_docs:IGI+IMP vs IEP": {
+   "n_a": 372,
+   "n_b": 3029,
+   "n_pmids": 2924,
+   "n_both_dropped": 13,
+   "auroc": 0.3923479838265938,
+   "ci95": [
+    0.36178951067003895,
+    0.42249412035389267
+   ],
+   "p": 1.0
+  }
+ },
+ "inputs": {
+  "runs/_p2e1_L/pred_clingen_docs.jsonl": "eccbc4f2a38e14275a1284aa3cbba725edb07089c59665c78fca40663dbd6d20",
+  "runs/_p2e1_P/pred_clingen_docs.jsonl": "8a409f704132b8328820fd440a33533bb43b3bc8e61d37a22851588484ad82e8",
+  "runs/_p2e1_Lp/pred_clingen_docs.jsonl": "81b1f03b668166c4d82907943dbfc26a48ec402924b9ef029936b8d27aabbc3e",
+  "runs/_p2e1_L/pred_rgd_docs.jsonl": "3a9c465777f838c29dd0ec25e982a17aed70715d3548e7c16528625ea3f7f4b0",
+  "runs/_p2e1_P/pred_rgd_docs.jsonl": "2dd4b48d7a9d46e8238027b6bee0e36f306becf6ea419c1f7706e0cf90dc691a",
+  "runs/_p2e1_Lp/pred_rgd_docs.jsonl": "81ae9bfe92e54791894fa1187536f880ea500cee57c36d372874a158de7c351d",
+  "runs/_p2e1_L/pred_percha_docs.jsonl": "ccb144f70d2a322151442f9ddc16521a7a8fd6d0753a2fd5a2f7f8680e746791",
+  "runs/_p2e1_P/pred_percha_docs.jsonl": "2032d68b7df33ecc2db7e5435d14dcc09afa9a5b6e6826f64da2c04e9991ad14",
+  "runs/_p2e1_Lp/pred_percha_docs.jsonl": "05ff9fb6d30c75151858c3eaac8b6f86a644e85a549155095f5c5d87d34e69fc",
+  "runs/_p2e1_L/pred_swap_clingen_u.jsonl": "d75605e14e85e11e7f163cc75a9436089859d0c97b47302ecb3517f1bf9190cb",
+  "runs/_p2e1_P/pred_swap_clingen_u.jsonl": "fb60eeb3563dd5e4830bdfc4f59b81f45ac469eb21cddf26348e6341d2f3347a",
+  "runs/_p2e1_Lp/pred_swap_clingen_u.jsonl": "01a1d107169f2945780f390e55cfb248af04cd056f29b0e9bffeee042d37ba3d"
+ },
+ "notes": [
+  "d = logit(clip(sP)) - logit(clip(sLp)), clip [1e-6, 1-1e-6]; s = p(Pos)+p(Neg)",
+  "per-reader crossover AUROCs use the raw s (no clip), direction A vs B as listed",
+  "L on RGD (IMP+IGI vs IEP): no predicted direction (\u00a711b item 4), reported as an estimate",
+  "a unit in both A and B is dropped from that contrast; units share no dedup (RGD has 9 pairs scored by 2 units each, none in IMP/IGI/IEP)",
+  "swap units: mapping.tsv rows with file == clingen_u; the unit is the E1 ClinGen unit of (orig_doc_id, gene), its candidate pair is recomputed on the swapped doc; cluster = the original PMID"
+ ]
+}

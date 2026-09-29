@@ -1,0 +1,4 @@
+{
+ "name": "_p2e3_emb_raw_s44",
+ "cmd": "cd /d D:\\model-second && (mkdir runs\\_p2e3_emb 2>nul & set PYTHONPATH=D:\\model-p2&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe D:\\model-p2\\docs\\results\\paper2\\embed.py --backbone michiyasunaga/BioLinkBERT-base --seed 44 --data D:\\model-second\\data\\CRED\\cred_docs.json --out D:\\model-second\\runs\\_p2e3_emb\\raw_s44.npz)"
+}

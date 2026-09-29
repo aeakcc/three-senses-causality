@@ -1,0 +1,74 @@
+{
+ "source": "Percha & Altman 2018, Zenodo 10.5281/zenodo.3459420 (CC BY 4.0)",
+ "exclude": [
+  "biored",
+  "bc8",
+  "cred"
+ ],
+ "seed": 0,
+ "n_per_class": 600,
+ "per_path": 3,
+ "max_tokens": 80,
+ "per_class": {
+  "MUT": {
+   "paths": 110028,
+   "records": 197013,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "CAUSE": {
+   "paths": 26117,
+   "records": 39458,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "UP": {
+   "paths": 60465,
+   "records": 125460,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "DOWN": {
+   "paths": 25128,
+   "records": 45394,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "EXPR": {
+   "paths": 211592,
+   "records": 463198,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "ASSOC": {
+   "paths": 64830,
+   "records": 115967,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "MARKER": {
+   "paths": 28775,
+   "records": 58629,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "RISK": {
+   "paths": 47992,
+   "records": 76488,
+   "sampled": 600,
+   "distinct_paths": 600
+  },
+  "THERAPY": {
+   "paths": 126111,
+   "records": 185074,
+   "sampled": 600,
+   "distinct_paths": 600
+  }
+ },
+ "n_docs": 5400,
+ "doc_ids_sha256": "1f4a239e50625ccdebdd5bd310df09e630e7f37ba575ad141ec72fb0c57b976c",
+ "sha256": {
+  "percha_docs.json": "9c0aa14925ce1c449194e3844221d074e1ae7aba859fbed583b107099d947580",
+  "percha_units.tsv": "4fa6ac0aece8b3b63f92c4145af402bcd8c1549a8efda96a49b62d5df32d495e"
+ }
+}

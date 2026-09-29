@@ -1,0 +1,4 @@
+{
+ "name": "_p2x_emb_percha_s44",
+ "cmd": "cd /d D:\\model-second && (mkdir runs\\_p2x_emb 2>nul & set PYTHONPATH=D:\\model-p2&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe D:\\model-p2\\docs\\results\\paper2\\embed.py --run D:\\model-second\\runs\\re_bl_base_bc8all_s44 --data D:\\model-second\\data\\paper2\\percha_docs.json --out D:\\model-second\\runs\\_p2x_emb\\percha_s44.npz)"
+}

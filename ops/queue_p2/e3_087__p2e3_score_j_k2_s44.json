@@ -1,0 +1,4 @@
+{
+ "name": "_p2e3_score_j_k2_s44",
+ "cmd": "cd /d D:\\model-p2 && D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --run D:\\model-second\\runs\\p2e3_j_k2_s44 --data D:\\model-second\\data\\CRED\\cv\\test_f2.json --tag cv --corpus cred --out-dir D:\\model-second\\runs\\p2e3_j_k2_s44"
+}

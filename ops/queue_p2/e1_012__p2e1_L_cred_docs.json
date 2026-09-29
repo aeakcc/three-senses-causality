@@ -1,0 +1,4 @@
+{
+ "name": "_p2e1_L_cred_docs",
+ "cmd": "cd /d D:\\model-second && set PYTHONPATH=D:\\model-p2&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --ensemble D:\\model-second\\runs\\re_bl_base_bc8all_s42 D:\\model-second\\runs\\re_bl_base_bc8all_s43 D:\\model-second\\runs\\re_bl_base_bc8all_s44 --data D:\\model-second\\data\\CRED\\cred_docs.json --tag cred_docs --out-dir D:\\model-second\\runs\\_p2e1_L"
+}

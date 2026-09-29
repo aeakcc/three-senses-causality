@@ -1,0 +1,28 @@
+{
+ "rule": "RGD IEP and IAGP single-pair units are capped at CAP each (random.Random(0) over sorted unit ids; units that also carry\na rarer code are always kept). ClinGen swaps keep the counterfactuals of the E1 primary units (GEN_CLV, EXP_*).\nPercha, BioTriplex and the CRED swaps are scored whole.",
+ "cap": 3000,
+ "clingen_units.tsv": {
+  "n": 5456,
+  "sha256": "37d73c2a180cff814678baecfdbcc604710d29a446bf160b3c611465f4f9aa9b"
+ },
+ "clingen_docs.json": {
+  "n": 5257,
+  "sha256": "6d1bc3d5105cb7b995b7d9ba46260d6c37c51f45411a69115efed581cbf319b6"
+ },
+ "rgd_units.tsv": {
+  "n": 8238,
+  "sha256": "ac9b81770b5622f62e65b23855d4c91023a9d9f5ea5c7fbafde2056174552733"
+ },
+ "rgd_docs.json": {
+  "n": 7255,
+  "sha256": "adcfd8da26112fabeba286bc97d4ce253d0b1a90603b4a458b1330090be1d49b"
+ },
+ "swap_clingen_u.json": {
+  "n": 3765,
+  "sha256": "e0602e922f22e256aebd80330f73e830e5e3e27b79ce0902a15f4787d11981b9"
+ },
+ "swap_clingen_k.json": {
+  "n": 3763,
+  "sha256": "3da384bb37b2886dfdf7f63ecef92be7fdceeb64d485f5e6bbef1b32cb390c07"
+ }
+}

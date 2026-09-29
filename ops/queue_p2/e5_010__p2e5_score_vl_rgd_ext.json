@@ -1,0 +1,4 @@
+{
+ "name": "_p2e5_score_vl_rgd_ext",
+ "cmd": "cd /d D:\\model-second && set PYTHONPATH=D:\\model-p2e5&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --ensemble D:\\model-second\\runs\\p2e5_vl_s42 D:\\model-second\\runs\\p2e5_vl_s43 D:\\model-second\\runs\\p2e5_vl_s44 --data D:\\model-second\\data\\paper2\\e5\\rgd_ext_docs.json --tag rgd_ext --corpus clingen --out-dir D:\\model-second\\runs\\_p2e5_vl"
+}

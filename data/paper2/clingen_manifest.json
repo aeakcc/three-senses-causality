@@ -1,0 +1,142 @@
+{
+ "source": "clingen",
+ "n_rows_pmid_no_entrez": 0,
+ "docs": {
+  "exclude": [
+   "biored",
+   "bc8",
+   "cred"
+  ],
+  "n_pmids": 24237,
+  "n_excluded": 32,
+  "n_missing": 12,
+  "n_no_abstract": 1301,
+  "n_docs": 22892,
+  "pmids_sha256": "0aa91fc0aab7147b1323a3e39c16c4a4484bbaf0837fb58970ae4fe182df6494"
+ },
+ "n_units_in": 26856,
+ "n_units_dropped": {
+  "no_doc": 1393,
+  "excluded": 33
+ },
+ "n_units": 25430,
+ "n_units_ortholog": 5018,
+ "sha256": {
+  "clingen_docs.json": "5d3cc9f2c4168ce0f4cf3e63191c07c5bb4ccddfcfacf3b5f0ecb48c2883b336",
+  "clingen_units.tsv": "abbafeab51297c690af978030f0f13ef33df641a28e4a408db8e5d72ab404a46"
+ },
+ "coverage": {
+  "BIO": {
+   "units": 1894,
+   "reachable": 1352,
+   "reachable_human": 1117,
+   "disease_matched": 256,
+   "both": 202
+  },
+  "CONTRA": {
+   "units": 148,
+   "reachable": 93,
+   "reachable_human": 93,
+   "disease_matched": 31,
+   "both": 16
+  },
+  "EXP_A": {
+   "units": 1735,
+   "reachable": 1273,
+   "reachable_human": 946,
+   "disease_matched": 275,
+   "both": 257
+  },
+  "EXP_B": {
+   "units": 462,
+   "reachable": 435,
+   "reachable_human": 411,
+   "disease_matched": 124,
+   "both": 112
+  },
+  "EXP_U": {
+   "units": 31,
+   "reachable": 24,
+   "reachable_human": 18,
+   "disease_matched": 2,
+   "both": 1
+  },
+  "FA_NONPAT": {
+   "units": 1426,
+   "reachable": 1288,
+   "reachable_human": 1124,
+   "disease_matched": 367,
+   "both": 335
+  },
+  "FA_PAT": {
+   "units": 1068,
+   "reachable": 961,
+   "reachable_human": 943,
+   "disease_matched": 215,
+   "both": 193
+  },
+  "GEN_CC": {
+   "units": 295,
+   "reachable": 240,
+   "reachable_human": 239,
+   "disease_matched": 81,
+   "both": 66
+  },
+  "GEN_CLV": {
+   "units": 14830,
+   "reachable": 12462,
+   "reachable_human": 12223,
+   "disease_matched": 3797,
+   "both": 3263
+  },
+  "GEN_SEG": {
+   "units": 4143,
+   "reachable": 3796,
+   "reachable_human": 3665,
+   "disease_matched": 1110,
+   "both": 1010
+  },
+  "MS_CELL": {
+   "units": 271,
+   "reachable": 253,
+   "reachable_human": 222,
+   "disease_matched": 43,
+   "both": 41
+  },
+  "MS_ORG": {
+   "units": 4232,
+   "reachable": 3709,
+   "reachable_human": 1866,
+   "disease_matched": 751,
+   "both": 680
+  },
+  "NONSCOR": {
+   "units": 2133,
+   "reachable": 1489,
+   "reachable_human": 1334,
+   "disease_matched": 480,
+   "both": 344
+  },
+  "PI": {
+   "units": 1048,
+   "reachable": 801,
+   "reachable_human": 670,
+   "disease_matched": 134,
+   "both": 102
+  },
+  "RES": {
+   "units": 943,
+   "reachable": 853,
+   "reachable_human": 691,
+   "disease_matched": 213,
+   "both": 192
+  },
+  "_all": {
+   "units": 25430,
+   "reachable": 20547,
+   "reachable_human": 17805,
+   "disease_matched": 5678,
+   "both": 4787
+  }
+ }
+}

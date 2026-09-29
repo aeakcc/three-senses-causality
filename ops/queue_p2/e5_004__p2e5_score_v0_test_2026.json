@@ -1,0 +1,4 @@
+{
+ "name": "_p2e5_score_v0_test_2026",
+ "cmd": "cd /d D:\\model-second && set PYTHONPATH=D:\\model-p2e5&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --ensemble D:\\model-second\\runs\\p2e5_v0_s42 D:\\model-second\\runs\\p2e5_v0_s43 D:\\model-second\\runs\\p2e5_v0_s44 --data D:\\model-second\\data\\paper2\\e5\\test_2026_docs.json --tag test_2026 --corpus clingen --out-dir D:\\model-second\\runs\\_p2e5_v0"
+}

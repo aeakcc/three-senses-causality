@@ -1,0 +1,102 @@
+{
+ "rule": "Classes = biocausal.data.EV_CLASSES. ClinGen unit classes: GEN_CLV, GEN_SEG, GEN_CC -> genetic; EXP_A/B/U -> expression;\nMS_ORG, MS_CELL, RES -> model_rescue; FA_PAT, FA_NONPAT -> functional_alteration; BIO, PI -> biochemical_interaction;\nNONSCOR and CONTRA ignored (a unit with only those is excluded). PMID split over ALL rows of evidence.tsv (approval_date\nof curations.tsv): TRAIN if every curation citing the PMID was approved before 2026-01-01, TEST_2026 if every one is in\nsealed_strict_ids.txt, else dropped. A train unit with more than one class is dropped; a test unit keeps all its\nclasses. Each train unit's single candidate pair gets {\"label\": \"None\", \"ev\": EV_CLASSES index}; a pair two units of one\ndoc give different classes loses 'ev' and both units leave train_units.tsv. RGD_EXT = e1 RGD units with IEP ->\nexpression, IMP / IGI -> model_rescue, IAGP -> genetic (other codes ignored, multi-label), no TRAIN PMID. Unit TSVs:\nclasses = coarse classes, extra.fine_classes = the e1 classes, extra.pair = [e1, e2] (the single candidate pair).",
+ "ev_classes": [
+  "genetic",
+  "expression",
+  "model_rescue",
+  "functional_alteration",
+  "biochemical_interaction"
+ ],
+ "cutoff": "2026-01-01",
+ "pmids": {
+  "train": 21848,
+  "dropped": 1006,
+  "test_2026": 1383
+ },
+ "dropped": {
+  "clingen_dropped_multi_class": 28,
+  "clingen_dropped_no_class": 16,
+  "clingen_dropped_single_class": 170,
+  "clingen_test_2026_multi_class": 25,
+  "clingen_test_2026_no_class": 23,
+  "clingen_test_2026_single_class": 219,
+  "clingen_train_multi_class": 560,
+  "clingen_train_no_class": 221,
+  "clingen_train_single_class": 4194,
+  "rgd_no_mapped_class": 1719,
+  "rgd_train_pmid": 207,
+  "train_pairs_class_conflict": 0,
+  "train_units_class_conflict": 0
+ },
+ "splits": {
+  "train": {
+   "n_units": 4194,
+   "n_docs": 4073,
+   "n_pmids": 4073,
+   "n_multi_label": 0,
+   "units_per_class": {
+    "genetic": 2891,
+    "expression": 142,
+    "model_rescue": 569,
+    "functional_alteration": 309,
+    "biochemical_interaction": 283
+   },
+   "single_class_units_per_class": {
+    "genetic": 2891,
+    "expression": 142,
+    "model_rescue": 569,
+    "functional_alteration": 309,
+    "biochemical_interaction": 283
+   },
+   "n_ev_pairs": 4194
+  },
+  "test_2026": {
+   "n_units": 244,
+   "n_docs": 244,
+   "n_pmids": 244,
+   "n_multi_label": 25,
+   "units_per_class": {
+    "genetic": 170,
+    "expression": 20,
+    "model_rescue": 43,
+    "functional_alteration": 28,
+    "biochemical_interaction": 18
+   },
+   "single_class_units_per_class": {
+    "genetic": 152,
+    "expression": 9,
+    "model_rescue": 33,
+    "functional_alteration": 15,
+    "biochemical_interaction": 10
+   }
+  },
+  "rgd_ext": {
+   "n_units": 6312,
+   "n_docs": 5602,
+   "n_pmids": 5602,
+   "n_multi_label": 42,
+   "units_per_class": {
+    "genetic": 2937,
+    "expression": 3036,
+    "model_rescue": 381,
+    "functional_alteration": 0,
+    "biochemical_interaction": 0
+   },
+   "single_class_units_per_class": {
+    "genetic": 2908,
+    "expression": 2997,
+    "model_rescue": 365,
+    "functional_alteration": 0,
+    "biochemical_interaction": 0
+   }
+  }
+ },
+ "sha256": {
+  "clingen.json": "b7b3240e8321d31123c95236e33add22b807d8ca34f7eff49f9353441f4d5e0e",
+  "train_units.tsv": "9ed875932501144d8f7668765aa1b0811dfeb08fd0e550f5e98aad1e813b5bff",
+  "test_2026_docs.json": "534c1fdc4b74c53bf916022e13de0409676812784bd89fb31030d3b4ca2950bf",
+  "test_2026_units.tsv": "aba263f27468867312e91db6420eb68dcd00dbe4d91b73dd30bba53e27045cc1",
+  "rgd_ext_docs.json": "ec46eaa4b9ad894dc3fd79e4e6d98174a389f6bdf18305d26f2c545d30cabb2e",
+  "rgd_ext_units.tsv": "9bc360f663f3735d5eb2bcf7586cce97d65ed9d82154f5d21720a5362b9dc4e2"
+ }
+}

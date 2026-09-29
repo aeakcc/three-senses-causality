@@ -1,0 +1,4 @@
+{
+ "name": "_p2e5_score_00_smoke",
+ "cmd": "cd /d D:\\model-second && set PYTHONPATH=D:\\model-p2e5&& set PYTHONSAFEPATH=1&& D:\\model-second\\.venv\\Scripts\\python.exe -m biocausal.score --run D:\\model-second\\runs\\p2e5_00_smoke --data D:\\model-second\\data\\CRED\\cred_val.json --tag smoke_cred_val --corpus clingen --out-dir D:\\model-second\\runs\\p2e5_00_smoke"
+}
